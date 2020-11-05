@@ -1,0 +1,15 @@
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\obj\Debug\netcoreapp3.1\PersonCatalog.Repository.csprojAssemblyReference.cache
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\obj\Debug\netcoreapp3.1\PersonCatalog.Repository.AssemblyInfoInputs.cache
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\obj\Debug\netcoreapp3.1\PersonCatalog.Repository.AssemblyInfo.cs
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\obj\Debug\netcoreapp3.1\PersonCatalog.Repository.csproj.CoreCompileInputs.cache
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\bin\Debug\netcoreapp3.1\PersonCatalog.Repository.deps.json
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\bin\Debug\netcoreapp3.1\PersonCatalog.Repository.dll
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\bin\Debug\netcoreapp3.1\PersonCatalog.Domain.dll
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\bin\Debug\netcoreapp3.1\PersonCatalog.Domain.pdb
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\obj\Debug\netcoreapp3.1\PersonCatalog.Repository.csproj.CopyComplete
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\bin\Debug\netcoreapp3.1\PersonCatalog.Repository.runtimeconfig.json
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\bin\Debug\netcoreapp3.1\PersonCatalog.Repository.runtimeconfig.dev.json
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\obj\Debug\netcoreapp3.1\PersonCatalog.Repository.genruntimeconfig.cache
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\bin\Debug\netcoreapp3.1\PersonCatalog.Repository.pdb
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\obj\Debug\netcoreapp3.1\PersonCatalog.Repository.dll
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Repository\obj\Debug\netcoreapp3.1\PersonCatalog.Repository.pdb

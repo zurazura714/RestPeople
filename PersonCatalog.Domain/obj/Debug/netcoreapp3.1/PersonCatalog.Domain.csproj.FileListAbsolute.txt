@@ -1,0 +1,9 @@
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\bin\Debug\netcoreapp3.1\PersonCatalog.Domain.deps.json
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\bin\Debug\netcoreapp3.1\PersonCatalog.Domain.dll
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\bin\Debug\netcoreapp3.1\PersonCatalog.Domain.pdb
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.AssemblyInfoInputs.cache
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.AssemblyInfo.cs
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.csproj.CoreCompileInputs.cache
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.dll
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.pdb
+C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.csprojAssemblyReference.cache
