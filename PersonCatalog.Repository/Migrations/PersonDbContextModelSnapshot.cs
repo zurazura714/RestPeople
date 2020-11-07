@@ -49,10 +49,45 @@ namespace PersonCatalog.Repository.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("PersonalNumber")
-                        .IsUnique();
-
                     b.ToTable("People");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            BirthDate = new DateTime(1996, 6, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Gender = (byte)1,
+                            Name = "Zura",
+                            PersonalNumber = "01008048579",
+                            Surname = "Samkharadze"
+                        },
+                        new
+                        {
+                            ID = 2,
+                            BirthDate = new DateTime(1998, 9, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Gender = (byte)2,
+                            Name = "Maiko",
+                            PersonalNumber = "01008048580",
+                            Surname = "Samkharadze"
+                        },
+                        new
+                        {
+                            ID = 3,
+                            BirthDate = new DateTime(1996, 2, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Gender = (byte)1,
+                            Name = "Alex",
+                            PersonalNumber = "91008048579",
+                            Surname = "Dvali"
+                        },
+                        new
+                        {
+                            ID = 4,
+                            BirthDate = new DateTime(1990, 1, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Gender = (byte)1,
+                            Name = "Zura",
+                            PersonalNumber = "81008048579",
+                            Surname = "Esebua"
+                        });
                 });
 
             modelBuilder.Entity("PersonCatalog.Domain.Domains.PhoneNumber", b =>
@@ -64,9 +99,10 @@ namespace PersonCatalog.Repository.Migrations
 
                     b.Property<string>("Number")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
-                    b.Property<int?>("PersonID")
+                    b.Property<int>("PersonID")
                         .HasColumnType("int");
 
                     b.Property<int>("phoneNumberType")
@@ -76,16 +112,65 @@ namespace PersonCatalog.Repository.Migrations
 
                     b.HasIndex("PersonID");
 
-                    b.ToTable("PhoneNumber");
+                    b.ToTable("PhoneNumbers");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            Number = "599473377",
+                            PersonID = 1,
+                            phoneNumberType = 1
+                        },
+                        new
+                        {
+                            ID = 2,
+                            Number = "0322458965",
+                            PersonID = 1,
+                            phoneNumberType = 3
+                        },
+                        new
+                        {
+                            ID = 3,
+                            Number = "599478523",
+                            PersonID = 2,
+                            phoneNumberType = 1
+                        },
+                        new
+                        {
+                            ID = 4,
+                            Number = "555555444",
+                            PersonID = 3,
+                            phoneNumberType = 1
+                        },
+                        new
+                        {
+                            ID = 5,
+                            Number = "599473377",
+                            PersonID = 4,
+                            phoneNumberType = 1
+                        },
+                        new
+                        {
+                            ID = 6,
+                            Number = "59999957",
+                            PersonID = 4,
+                            phoneNumberType = 2
+                        });
                 });
 
-            modelBuilder.Entity("PersonCatalog.Domain.Domains.Relations", b =>
+            modelBuilder.Entity("PersonCatalog.Domain.Domains.Relation", b =>
                 {
-                    b.Property<int>("FromID")
+                    b.Property<int>("PersonFromID")
                         .HasColumnType("int");
 
-                    b.Property<int>("ToID")
+                    b.Property<int>("PersonToID")
                         .HasColumnType("int");
+
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<int?>("PersonID")
                         .HasColumnType("int");
@@ -93,37 +178,83 @@ namespace PersonCatalog.Repository.Migrations
                     b.Property<int>("RelationType")
                         .HasColumnType("int");
 
-                    b.HasKey("FromID", "ToID");
+                    b.HasKey("PersonFromID", "PersonToID");
 
                     b.HasIndex("PersonID");
 
-                    b.HasIndex("ToID");
+                    b.HasIndex("PersonToID");
 
                     b.ToTable("Relations");
+
+                    b.HasData(
+                        new
+                        {
+                            PersonFromID = 1,
+                            PersonToID = 2,
+                            ID = 1,
+                            RelationType = 1
+                        },
+                        new
+                        {
+                            PersonFromID = 1,
+                            PersonToID = 3,
+                            ID = 2,
+                            RelationType = 1
+                        },
+                        new
+                        {
+                            PersonFromID = 1,
+                            PersonToID = 4,
+                            ID = 3,
+                            RelationType = 4
+                        },
+                        new
+                        {
+                            PersonFromID = 2,
+                            PersonToID = 4,
+                            ID = 4,
+                            RelationType = 2
+                        },
+                        new
+                        {
+                            PersonFromID = 2,
+                            PersonToID = 3,
+                            ID = 5,
+                            RelationType = 4
+                        },
+                        new
+                        {
+                            PersonFromID = 3,
+                            PersonToID = 4,
+                            ID = 6,
+                            RelationType = 1
+                        });
                 });
 
             modelBuilder.Entity("PersonCatalog.Domain.Domains.PhoneNumber", b =>
                 {
-                    b.HasOne("PersonCatalog.Domain.Domains.Person", null)
+                    b.HasOne("PersonCatalog.Domain.Domains.Person", "Person")
                         .WithMany("Phones")
-                        .HasForeignKey("PersonID");
+                        .HasForeignKey("PersonID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
-            modelBuilder.Entity("PersonCatalog.Domain.Domains.Relations", b =>
+            modelBuilder.Entity("PersonCatalog.Domain.Domains.Relation", b =>
                 {
                     b.HasOne("PersonCatalog.Domain.Domains.Person", "PersonFrom")
                         .WithMany()
-                        .HasForeignKey("FromID")
+                        .HasForeignKey("PersonFromID")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("PersonCatalog.Domain.Domains.Person", null)
-                        .WithMany("RelatedTo")
+                        .WithMany("RelativeFrom")
                         .HasForeignKey("PersonID");
 
                     b.HasOne("PersonCatalog.Domain.Domains.Person", "PersonTo")
-                        .WithMany("RelatedFrom")
-                        .HasForeignKey("ToID")
+                        .WithMany("RelativeTo")
+                        .HasForeignKey("PersonToID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

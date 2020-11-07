@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Repository\\PersonCatalog.Repository.csproj": {}
+    "D:\\MyProject\\RestPeople\\PersonCatalog.Repository\\PersonCatalog.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj": {
+    "D:\\MyProject\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj",
+        "projectUniqueName": "D:\\MyProject\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj",
         "projectName": "PersonCatalog.Domain",
-        "projectPath": "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj",
-        "packagesPath": "C:\\Users\\zuraz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Domain\\obj\\",
+        "projectPath": "D:\\MyProject\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj",
+        "packagesPath": "C:\\Users\\zura.samkharadze\\.nuget\\packages\\",
+        "outputPath": "D:\\MyProject\\RestPeople\\PersonCatalog.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\zuraz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zura.samkharadze\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -52,21 +55,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Repository\\PersonCatalog.Repository.csproj": {
+    "D:\\MyProject\\RestPeople\\PersonCatalog.Repository\\PersonCatalog.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Repository\\PersonCatalog.Repository.csproj",
+        "projectUniqueName": "D:\\MyProject\\RestPeople\\PersonCatalog.Repository\\PersonCatalog.Repository.csproj",
         "projectName": "PersonCatalog.Repository",
-        "projectPath": "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Repository\\PersonCatalog.Repository.csproj",
-        "packagesPath": "C:\\Users\\zuraz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Repository\\obj\\",
+        "projectPath": "D:\\MyProject\\RestPeople\\PersonCatalog.Repository\\PersonCatalog.Repository.csproj",
+        "packagesPath": "C:\\Users\\zura.samkharadze\\.nuget\\packages\\",
+        "outputPath": "D:\\MyProject\\RestPeople\\PersonCatalog.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\zuraz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zura.samkharadze\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj": {
-                "projectPath": "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj"
+              "D:\\MyProject\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj": {
+                "projectPath": "D:\\MyProject\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj"
               }
             }
           }
@@ -111,6 +117,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.9, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[3.1.9, )"
             }
           },
           "imports": [
@@ -128,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

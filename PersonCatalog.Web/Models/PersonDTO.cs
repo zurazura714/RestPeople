@@ -16,5 +16,8 @@ namespace PersonCatalog.Web.Models
         public GenderType Gender { get; set; }
         public string PersonalNumber { get; set; }
         public int Age { get; set; }
+        public virtual ICollection<PhoneDTO> Phones { get; set; }
+        public virtual ICollection<RelativeDTO> Relatives { get; set; } 
+        = new List<RelativeDTO>();
     }
 }

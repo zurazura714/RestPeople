@@ -3,6 +3,7 @@ using PersonCatalog.Domain.Interfaces;
 using PersonCatalog.Domain.Interfaces.IRepositories;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace PersonCatalog.Repository.Repositories

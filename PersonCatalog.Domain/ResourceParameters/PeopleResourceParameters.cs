@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace PersonCatalog.Web.ResourceParameters
+namespace PersonCatalog.Domain.ResourceParameters
 {
     public class PeopleResourceParameters
     {
         const int maxPageSize = 20;
         public string SearchName { get; set; }
         public int PageNumber { get; set; } = 1;
-        public int _pageSize;
-        public int PageSize 
-        { 
+
+        private int _pageSize = 10;
+        public int PageSize
+        {
             get => _pageSize;
-            set => _pageSize = (value > maxPageSize) ? maxPageSize : value; 
+            set => _pageSize = (value > maxPageSize) ? maxPageSize : value;
         }
     }
 }

@@ -1,7 +1,9 @@
 ﻿using PersonCatalog.Domain.Domains;
+using PersonCatalog.Domain.Helpers;
 using PersonCatalog.Domain.Interfaces;
 using PersonCatalog.Domain.Interfaces.IRepositories;
 using PersonCatalog.Domain.Interfaces.IServices;
+using PersonCatalog.Domain.ResourceParameters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,14 +17,33 @@ namespace PersonCatalog.Service.Services
         {
         }
 
-        public IEnumerable<Person> GetPeopleByName(string searchName)
+        public PagedList<Person> SearchForPeople(PeopleResourceParameters resourceParameters)
         {
-            if (string.IsNullOrWhiteSpace(searchName))
+            if (resourceParameters == null)
             {
-                return Set();
+                throw new ArgumentNullException(nameof(PeopleResourceParameters));
             }
-            searchName = searchName.Trim();
-            return Set().Where(a => a.Name == searchName);
+
+            var searchName = resourceParameters.SearchName;
+            var result = Set().AsQueryable();
+            if (searchName != null)
+            {
+                searchName = searchName.Trim();
+
+                result = result.Where(a =>
+                        searchName == null ||
+                        a.Name.Contains(searchName) ||
+                        a.Surname.Contains(searchName) ||
+                        a.PersonalNumber.Contains(searchName) ||
+                        a.Phones.Any(a => a.Number.Contains(searchName))
+                        //||
+                        //a.RelativeTo.Any(a => a.PersonTo.Name.Contains(parameters.SearchName))
+                        );
+            }
+
+            return PagedList<Person>.Create(result,
+                resourceParameters.PageNumber,
+                resourceParameters.PageSize);
         }
     }
 }

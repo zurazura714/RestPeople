@@ -35,6 +35,10 @@ namespace PersonCatalog.Service.Services
             _repository.Save(entity);
             _context.Commit();
         }
+        public void SaveChanges()
+        {
+            _context.Commit();
+        }
 
         public void Delete(int id)
         {

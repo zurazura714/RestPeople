@@ -22,7 +22,7 @@ namespace PersonCatalog.Domain.Domains
         [Required]
         public DateTime BirthDate { get; set; }
         public virtual ICollection<PhoneNumber> Phones { get; set; }
-        public virtual ICollection<Relations> RelatedTo { get; set; }
-        public virtual ICollection<Relations> RelatedFrom { get; set; }
+        public virtual ICollection<Relation> RelativeTo { get; set; }
+        public virtual ICollection<Relation> RelativeFrom { get; set; }
     }
 }

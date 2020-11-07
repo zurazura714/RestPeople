@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nrPnRCRUT8WjIPXHEZqrupzbKg8m9EbuYLabQ2sD5d/u+dDmGbhBkzxWfTt9guYmBq5l99rqRQn0cCYf8wIQYg==",
+  "dgSpecHash": "oZBCay6+U/yeLZUJKLV/Bp5mC7YHmQMfpAxVqLvbKC8U3PpII/AIKvZhFsoqPJZT/YkIgVB+3eR8YwMMyqYiIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zuraz\\source\\repos\\zurazura714\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj",
+  "projectFilePath": "D:\\MyProject\\RestPeople\\PersonCatalog.Domain\\PersonCatalog.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

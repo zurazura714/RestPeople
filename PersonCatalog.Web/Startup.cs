@@ -50,12 +50,24 @@ namespace PersonCatalog.Web
             services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddScoped<IPersonService, PersonService>();
 
+            services.AddScoped<IPhoneRepository, PhoneRepository>();
+            services.AddScoped<IPhoneService, PhoneService>();
+
+            services.AddScoped<IRelationRepository, RelationRepository>();
+            services.AddScoped<IRelationService, RelationService>();
+
 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetRequiredService<PersonDbContext>();
+                context.Database.Migrate();
+            }
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

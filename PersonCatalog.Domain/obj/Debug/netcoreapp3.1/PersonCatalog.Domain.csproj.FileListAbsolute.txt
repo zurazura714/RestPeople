@@ -7,3 +7,12 @@ C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\obj\Debug\netcore
 C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.dll
 C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.pdb
 C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.csprojAssemblyReference.cache
+D:\MyProject\RestPeople\PersonCatalog.Domain\bin\Debug\netcoreapp3.1\PersonCatalog.Domain.deps.json
+D:\MyProject\RestPeople\PersonCatalog.Domain\bin\Debug\netcoreapp3.1\PersonCatalog.Domain.dll
+D:\MyProject\RestPeople\PersonCatalog.Domain\bin\Debug\netcoreapp3.1\PersonCatalog.Domain.pdb
+D:\MyProject\RestPeople\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.AssemblyInfoInputs.cache
+D:\MyProject\RestPeople\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.AssemblyInfo.cs
+D:\MyProject\RestPeople\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.csproj.CoreCompileInputs.cache
+D:\MyProject\RestPeople\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.dll
+D:\MyProject\RestPeople\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.pdb
+D:\MyProject\RestPeople\PersonCatalog.Domain\obj\Debug\netcoreapp3.1\PersonCatalog.Domain.csprojAssemblyReference.cache

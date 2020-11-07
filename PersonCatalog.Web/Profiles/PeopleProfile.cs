@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper.Extensions.EnumMapping;
+
 
 namespace PersonCatalog.Web.Profiles
 {
@@ -16,13 +18,14 @@ namespace PersonCatalog.Web.Profiles
             //TODO: Gender Enum
             CreateMap<Person, PersonDTO>()
                 .ForMember(
-                dest => dest.Name,
-                opt => opt.MapFrom(src => src.Name))
-                .ForMember(
                 dest => dest.Age,
-                    opt => opt.MapFrom(src => src.BirthDate.GetCurrentAge()));
+                    opt => opt.MapFrom(src => src.BirthDate.GetCurrentAge()))
+                .ForMember(
+                dest => dest.Relatives,
+                opt => opt.MapFrom(src => src.RelativeTo));
 
             CreateMap<PersonCreateDTO, Person>();
+            CreateMap<PersonForUpdateDTO, Person>();
         }
     }
 }

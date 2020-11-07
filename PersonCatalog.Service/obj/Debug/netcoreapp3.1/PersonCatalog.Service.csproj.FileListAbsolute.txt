@@ -12,3 +12,17 @@ C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Service\obj\Debug\netcor
 C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Service\obj\Debug\netcoreapp3.1\PersonCatalog.Service.csproj.CopyComplete
 C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Service\obj\Debug\netcoreapp3.1\PersonCatalog.Service.dll
 C:\Users\zuraz\source\repos\PersonCatalog\PersonCatalog.Service\obj\Debug\netcoreapp3.1\PersonCatalog.Service.pdb
+D:\MyProject\RestPeople\PersonCatalog.Service\bin\Debug\netcoreapp3.1\PersonCatalog.Service.deps.json
+D:\MyProject\RestPeople\PersonCatalog.Service\bin\Debug\netcoreapp3.1\PersonCatalog.Service.dll
+D:\MyProject\RestPeople\PersonCatalog.Service\bin\Debug\netcoreapp3.1\PersonCatalog.Service.pdb
+D:\MyProject\RestPeople\PersonCatalog.Service\bin\Debug\netcoreapp3.1\PersonCatalog.Domain.dll
+D:\MyProject\RestPeople\PersonCatalog.Service\bin\Debug\netcoreapp3.1\PersonCatalog.Repository.dll
+D:\MyProject\RestPeople\PersonCatalog.Service\bin\Debug\netcoreapp3.1\PersonCatalog.Domain.pdb
+D:\MyProject\RestPeople\PersonCatalog.Service\bin\Debug\netcoreapp3.1\PersonCatalog.Repository.pdb
+D:\MyProject\RestPeople\PersonCatalog.Service\obj\Debug\netcoreapp3.1\PersonCatalog.Service.csprojAssemblyReference.cache
+D:\MyProject\RestPeople\PersonCatalog.Service\obj\Debug\netcoreapp3.1\PersonCatalog.Service.AssemblyInfoInputs.cache
+D:\MyProject\RestPeople\PersonCatalog.Service\obj\Debug\netcoreapp3.1\PersonCatalog.Service.AssemblyInfo.cs
+D:\MyProject\RestPeople\PersonCatalog.Service\obj\Debug\netcoreapp3.1\PersonCatalog.Service.csproj.CoreCompileInputs.cache
+D:\MyProject\RestPeople\PersonCatalog.Service\obj\Debug\netcoreapp3.1\PersonCatalog.Service.csproj.CopyComplete
+D:\MyProject\RestPeople\PersonCatalog.Service\obj\Debug\netcoreapp3.1\PersonCatalog.Service.dll
+D:\MyProject\RestPeople\PersonCatalog.Service\obj\Debug\netcoreapp3.1\PersonCatalog.Service.pdb

@@ -9,6 +9,7 @@ namespace PersonCatalog.Domain.Interfaces.IServices
         TEntity Fetch(int id);
         IEnumerable<TEntity> Set();
         void Save(TEntity entity);
+        void SaveChanges();
         void Delete(int id);
         void Delete(TEntity entity);
     }

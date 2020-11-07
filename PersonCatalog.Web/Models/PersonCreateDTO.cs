@@ -10,7 +10,6 @@ namespace PersonCatalog.Web.Models
 {
     public class PersonCreateDTO
     {
-        public int ID { get; set; }
 
         //[RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
         [OnlyLatinOrNonLatinSymbolsAllowed]
@@ -28,7 +27,11 @@ namespace PersonCatalog.Web.Models
         [StringLength(11, MinimumLength = 11, ErrorMessage = "{0} property symbol Length must be {2}")]
         [ShouldContainOnlyDigits]
         public string PersonalNumber { get; set; }
+
         [Min18YearsOld]
         public DateTime BirthDate { get; set; }
+
+        public ICollection<PhoneCreateDTO> Phones { get; set; }
+          = new List<PhoneCreateDTO>();
     }
 }
