@@ -25,7 +25,8 @@ namespace PersonCatalog.Web.Profiles
                 opt => opt.MapFrom(src => src.RelativeTo));
 
             CreateMap<PersonCreateDTO, Person>();
-            CreateMap<PersonForUpdateDTO, Person>();
+            CreateMap<Person, PersonCreateDTO>();
+            //CreateMap<PersonForUpdateDTO, Person>();
         }
     }
 }

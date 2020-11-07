@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
 using PersonCatalog.Domain.Interfaces;
 using PersonCatalog.Domain.Interfaces.IRepositories;
 using PersonCatalog.Domain.Interfaces.IServices;
@@ -38,7 +39,13 @@ namespace PersonCatalog.Web
             {
                 setupAction.ReturnHttpNotAcceptable = true;
 
-            }).AddXmlDataContractSerializerFormatters();
+            })
+                .AddNewtonsoftJson(setupAction =>
+                {
+                    setupAction.SerializerSettings.ContractResolver =
+                       new CamelCasePropertyNamesContractResolver();
+                })
+                .AddXmlDataContractSerializerFormatters();
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

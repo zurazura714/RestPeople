@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using PersonCatalog.Domain.Domains;
 using PersonCatalog.Domain.Helpers;
@@ -120,6 +121,32 @@ namespace PersonCatalog.Web.Controllers
                 person.Phones = _mapper.Map<List<PhoneNumber>>(personDTO.Phones);
             }
             _personService.SaveChanges();
+            return NoContent();
+        }
+
+        [HttpPatch("{id}")]
+        public IActionResult patchAuthors(int id,
+            JsonPatchDocument<PersonCreateDTO> patchDocument)
+        {
+            var person = _personService.Fetch(id);
+            if (person == null)
+            {
+                return NotFound();
+            }
+            var peopleToPatch = _mapper.Map<PersonCreateDTO>(person);
+            //add Validation
+            patchDocument.ApplyTo(peopleToPatch, ModelState);
+
+            if (!TryValidateModel(peopleToPatch))
+            {
+                return ValidationProblem(ModelState);
+            }
+
+            _mapper.Map(peopleToPatch, person);
+
+            _personService.SaveChanges();
+
+
             return NoContent();
         }
 
